@@ -1,0 +1,10 @@
+recursive-include src/native *.h
+include README-LINUX.TXT
+recursive-include examples *.TXT
+recursive-include examples *.sh
+recursive-include examples *.py
+recursive-include test/harness */*.java
+recursive-include test/jpypetest */*.py
+recursive-include test/sample *.xml
+include test/*.py
+include test/*.xml

@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jpype", "jpype\jpype.vcproj", "{7AAEE509-F4FF-4F26-B0DB-6681BD83E0BD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jpypepython", "jpypepython\jpypepython.vcproj", "{5F02FE71-9EF5-4E7C-B0F9-4E6446A2C919}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7AAEE509-F4FF-4F26-B0DB-6681BD83E0BD} = {7AAEE509-F4FF-4F26-B0DB-6681BD83E0BD}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7AAEE509-F4FF-4F26-B0DB-6681BD83E0BD}.Debug.ActiveCfg = Debug|Win32
+		{7AAEE509-F4FF-4F26-B0DB-6681BD83E0BD}.Debug.Build.0 = Debug|Win32
+		{7AAEE509-F4FF-4F26-B0DB-6681BD83E0BD}.Release.ActiveCfg = Release|Win32
+		{7AAEE509-F4FF-4F26-B0DB-6681BD83E0BD}.Release.Build.0 = Release|Win32
+		{5F02FE71-9EF5-4E7C-B0F9-4E6446A2C919}.Debug.ActiveCfg = Debug|Win32
+		{5F02FE71-9EF5-4E7C-B0F9-4E6446A2C919}.Debug.Build.0 = Debug|Win32
+		{5F02FE71-9EF5-4E7C-B0F9-4E6446A2C919}.Release.ActiveCfg = Release|Win32
+		{5F02FE71-9EF5-4E7C-B0F9-4E6446A2C919}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

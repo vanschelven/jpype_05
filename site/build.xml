@@ -1,0 +1,26 @@
+<project default="dist" name="Jpype - site">
+	<target name="dist">
+		<mkdir dir="../build/htdocs"/>
+		<copy todir="../build/htdocs">
+			<fileset dir=".">
+				<include name="*.html"/>
+				<include name="*.css"/>
+				<include name="doc/**"/>
+				<include name="../readme.txt"/>
+			</fileset>
+		</copy>
+		
+		<mkdir dir="../build/htdocs/images"/>
+		<copy todir="../build/htdocs/images">
+			<fileset dir="images">
+				<include name="*"/>
+			</fileset>
+		</copy>
+		
+		<zip basedir="doc/user-guide"
+			destfile="../build/htdocs/userguide.zip"
+			includes="**"
+		/>
+	</target>
+	
+</project>

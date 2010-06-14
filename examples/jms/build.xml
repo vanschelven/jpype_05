@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<!-- Ant buildfile for the JpypeJMS package -->
+
+<project name="JpypeJMS" default="make" basedir=".">
+
+  <!--=============
+   Global Settings
+  ============  -->
+  <property name="build.compiler" value="modern"/>
+  <property name="debug" value="on"/>
+  <property name="optimize" value="off"/>
+  <property name="deprecation" value="on"/>
+  
+  <!-- Project Directories  -->
+  <property name="base.dir" value="."/>
+  <property name="src.dir" value="${basedir}/src"/>
+  <property name="doc.dir" value="${basedir}/doc"/>
+  <property name="lib.dir" value="${basedir}/lib"/>
+  <property name="bin.dir" value="${basedir}/bin"/>
+  <property name="classes.dir" value="${basedir}/classes"/>
+  
+  <path id="classpath">
+    <!-- Include JMS Spread Bridge sources -->
+    <pathelement location="${src.dir}"/>
+    <!-- Include JMS Spread Bridge classes -->
+    <pathelement location="${classes.dir}"/>
+    <!-- Include stinken WebLogic Stuff -->
+    <pathelement location="C:\bea\weblogic81\server\lib\weblogic.jar"/>
+  </path>
+
+  <!--================================================
+   Target: prepare - prepares the build directories
+  ===============================================  -->
+  <target name="prepare">
+    <tstamp/>
+    <mkdir dir="${classes.dir}"/>
+    <mkdir dir="${classes.dir}/messaging"/>
+    <mkdir dir="${doc.dir}"/>
+   </target>
+
+  <!--=================================
+   Target: classpath - echos classpath
+  ================================  -->
+  <target name="classpath">
+    <pathconvert targetos="windows" property="windowsPath" refid="classpath"/>
+    <echo>Classpath=${windowsPath}</echo>
+  </target>
+
+  <!--==========================================
+   Target: make - compiles to class files
+  =========================================  -->
+  <target name="make" depends="prepare">
+    <javac 
+      srcdir="${src.dir}"
+      destdir="${classes.dir}"
+      debug="${debug}"
+      deprecation="${deprecation}"
+      classpathref="classpath"/>
+  </target>
+
+  <!--=====================================
+   Target: runTestPublisher = Run the testJpypePublisher
+  ====================================  -->
+  <target name="testJpypeSubscriber" depends="make">
+    <java
+      classname="messaging.testJpypeSubscriber"
+      classpathref="classpath"/>
+  </target>
+
+  <!--=====================================
+   Target: testJpypePublisher = Run the Tester of Jpype publishing
+  ====================================  -->
+  <target name="testJpypePublisher" depends="make">
+    <java
+      classname="messaging.testJpypePublisher"
+      classpathref="classpath"/>
+  </target>
+
+  <!--================================================================
+   Target: dist - Creates distribution jars and directory structure
+  ===============================================================  -->
+  <target name="dist"
+          depends="make">
+    <jar jarfile="${lib.dir}/JpypeJMS.jar" 
+         basedir="${classes.dir}"
+         includes="messaging/*.class">
+    </jar>
+  </target>
+
+  <!--============================================
+   Target: clean - Cleans all build directories
+  ===========================================  -->
+  <target name="clean">
+    <delete dir="${classes.dir}/messaging"/>
+    <delete file="${lib.dir}/JpypeJMS.jar" />
+  </target>
+  
+    <target name="help">
+        <echo message=""/>
+        <echo message="ant clean                  -- Cleans all build directories "/>
+        <echo message="ant prepare                -- Prepares the build directories "/>
+        <echo message="ant classpath              -- Echos the classpath "/>
+        <echo message="ant make                   -- Compiles all source files "/>
+        <echo message="ant testJpypeSubscriber      -- Runs testJpypeSubscriber  "/>
+        <echo message="ant testJpypePublisher     -- Runs testJpypePublisher  "/>
+        <echo message=""/>
+    </target>
+
+</project>
+

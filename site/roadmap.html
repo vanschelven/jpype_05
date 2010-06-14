@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>JPype - Roadmap</title>
+<!-- InstanceEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="header">
+  <tr>
+    <td width="161"><img src="images/eye_left.jpg" alt="" width="161" height="120" /></td>
+    <td align="center"><img src="images/logo.gif" alt="" width="377" height="120" /></td>
+    <td width="161"><img src="images/eye_right.jpg" alt="" width="161" height="120" /></td>
+  </tr>
+</table>
+<br />
+<table width="750" border="0" align="center" cellpadding="10" cellspacing="0">
+  <tr> 
+    <td width="150" align="right" valign="top" class="menu"> 
+	  <p class="menublock"><a href="index.html">Home</a></p> 
+      <p class="menublock"><a href="documentation.html">Documentation</a></p>
+      <p class="menublock"><a href="roadmap.html">Roadmap</a></p>
+      <p class="menublock"><a href="http://sourceforge.net/project/showfiles.php?group_id=109824">Download</a></p>
+      <p class="menublock"><a href="http://sourceforge.net/projects/jpype/">Sourceforge Project</a></p>
+	  <!--
+      <p class="menublock"><a href="#">Portfolio</a></p>
+      <p class="menublock"><a href="#">About Us</a></p>
+      <p class="menublock"><a href="#">Contact Us</a></p>
+	  -->
+        <br />
+        <a href="javascript:void(document.location='http://validator.w3.org/check?uri='+document.location)"><img src="images/vxhtml10.gif" alt="This page is XHTML 1.0 compliant" width="75" height="25" border="0" /></a>
+        <br />
+        <a href="javascript:void(document.location='http://jigsaw.w3.org/css-validator/validator?uri='+document.location)"><img src="images/vcss.gif" alt="This page is CSS compliant" width="75" height="25" border="0" /></a><br />
+		<br/>
+		<a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=109824&amp;type=4" width="125" height="37" border="0" alt="SourceForge.net Logo" /></a><br/>
+      <p><strong>Links:</strong><br />
+        <a href="http://www.python.org">Python</a><br />
+        <a href="http://java.sun.com">Java</a><br />
+        <a href="http://www.jython.org">Jython/JPython</a><br />
+		<!--
+        <a href="#">On and on</a>
+        -->
+        </p>
+      <p><strong>Similar Projects :</strong><br />
+        <a href="http://jepp.sourceforge.net/">JEP</a><br />
+        <a href="http://jpe.sourceforge.net/">JPE</a><br /> 
+		<!--
+        <a href="#">Yup, you get it</a>
+        -->
+        </p>
+      <p>Important Message Here. This template is free at <a href="http://www.r7designer.com">www.r7designer.com</a>!</p></td>
+		-->
+    <td valign="top" class="content"><!-- InstanceBeginEditable name="Main Content" -->
+	<h1>Roadmap -</h1>
+      <p>Following is a plan (as up to date as I can keep it) of the steps leading to the 1.0 release. For each release, there is a list of planned features. Also, I explain some of the ideas I ahve for this technology post 1.0.</p>
+	  <H2>0.1</H2>
+	  <ul>
+	  	<LI>Call any Java method.</LI>
+		<LI>Access any Java field.</LI>
+		<LI>Instantiate any Java class.</LI>
+		<LI>Provide wrapper classes.</LI>
+		<LI>Setup/shutdown JVM, along eith startup parameters like classpath, etc ...</LI>
+	  </ul>
+	  <H2>0.2</H2>
+	  <UL>
+	    <LI>Install via distutil</LI>
+	  	<LI>Add Object wrapper.</LI>
+	  	<LI>Support array types and Wrapper.</LI>
+		<LI>Allow access to interface constants thourgh a subclass' class or instance.</LI>
+		<LI>Support for Java Threading primitives.</LI>
+		<LI>Support for Java <em>synchronized</em> keyword.</LI>
+	  </UL>
+	  <H2>0.3</H2>
+	  <UL>
+	  	<LI>Support Java dynamic proxies, so a python program can receive callback through any java interface.</LI>
+		<LI>Special support for listener classes to make them easier to use in Python.</LI>
+	  </UL>
+	  <H2>0.4</H2>
+	  <UL>
+	  	<LI>Complete rebuild for modularity and easier movement forward.</LI>
+	  </UL>
+	  <H2>0.5</H2>
+	  <UL>
+	  	<LI>Allow Java code to launch a Python instance. Needed for Java-hosted environments like Servlets.</LI>
+		<LI>Allow pre-generation of java proxy to Python classes.</LI>
+	  </UL>
+	  ...
+	  <H2>1.0</H2>
+	  <UL>
+	  	<LI>Allow subclassing of Java classes in Python.</LI>
+		<LI>Allow a python class to extends a java class and implement one or more Java interface.</LI>
+	  </UL>
+	 
+	  <H2>Miscellaneous</H2>
+	  Features in this list may make it in any release, and will be moved in that releases list once it has been decided.
+	  <UL>
+		<LI>Provide a Java Collection and wrapper.</LI>
+	  	<LI>Make Java classes more python-like. I.e. support __bases__, etc ...</LI>
+		<LI>Make Java instances more python-like, i.e. support __str__, __cmp__, __class__, etc ...</LI>
+		<LI>Support other platforms : MacOS X, etc ...</LI>
+	  </UL>
+	  <H1>Beyond 1.0</H1>
+	  <P>After 1.0 will be released, a rewrite is planned. The goal of this re-write is to cleanly separate the JNI/Java interfacing logic from the Python code that uses it.</P>
+	  <P>Once we got that, if there is interest, new hosting-code can be written to that other environments can use Java libraies. Logical candidates include Perl and Ruby and Parrot. </P>	  
+	  <!-- InstanceEndEditable --></td>
+  </tr>
+</table>
+<br />
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td align="center" class="footer"><!--<a href="#">Link 1</a> :: <a href="#">Link 
+      2</a> :: <a href="#">Link 3</a> :: <a href="#">Link 4</a> :: <a href="#">Link 
+      5</a> :: <a href="#">Link 6</a>--><br />
+      You are looking at a Free Dreamweaver Template created by:<br />
+      <a href="http://www.r7designer.com">http://www.r7designer.com </a></td>
+  </tr>
+</table>
+</body>
+<!-- InstanceEnd --></html>

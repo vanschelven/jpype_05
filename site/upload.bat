@@ -1,0 +1,1 @@
+pscp -r -load sourceforge ../build/htdocs devilwolf@shell.sourceforge.net:/home/groups/j/jp/jpype

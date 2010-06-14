@@ -1,0 +1,57 @@
+<project name="JEmbed/Python" default="build">
+	
+	<property name="python2" value="python"/>
+	<property name="python" value="python.exe"/>
+	<property name="target.compiler2" value="--compiler=mingw32"/>
+	<property name="target.compiler" value=""/>
+	
+	<target name="build">
+		<exec executable="${python}">
+			<arg value="setup.py"/>
+			<arg value="build"/>
+			<arg value="${target.compiler}"/>
+		</exec>
+		<copy todir="build" flatten="true">
+			<fileset dir="build">
+				<include name="lib.win32*/_jpype.pyd"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="rebuild" depends="clean">
+		<exec executable="${python}">
+			<arg value="setup.py"/>
+			<arg value="build"/>
+			<arg value="-f"/>
+			<arg value="${target.compiler}"/>
+		</exec>
+		<copy todir="build" flatten="true">
+			<fileset dir="build">
+				<include name="lib.win32*/_jpype.pyd"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="clean">
+	</target>
+	
+	<target name="gencode">
+		<mkdir dir="build/java"/>
+		<javac destdir="build/java" srcdir="src/java" source="1.3" target="1.3"/>
+		<exec executable="${python}">
+			<arg value="build-support/codegen.py"/>
+		</exec>
+		<exec executable="${python}">
+			<arg value="build-support/codegen.py"/>
+		</exec>
+	</target>
+	
+	<target name="install">
+		<exec executable="${python}">
+			<arg value="setup.py"/>
+			<arg value="install"/>
+		</exec>
+	</target>
+
+	<target name="reinstall" depends="rebuild,install"/>
+</project>

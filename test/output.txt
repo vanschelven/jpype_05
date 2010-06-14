@@ -1,0 +1,203 @@
+<B msg="startup" >
+  <B msg="JPyString::asString" >
+  </B> <!-- JPyString::asString -->
+  <B msg="JPyString::asString" >
+  </B> <!-- JPyString::asString -->
+  <B msg="JPyString::asString" >
+  </B> <!-- JPyString::asString -->
+  <B msg="JPEnv::loadJVM" >
+    <B msg="JPJavaEnv::load" >
+    </B> <!-- JPJavaEnv::load -->
+    <B msg="JPJavaEnv::CreateJavaVM" >
+      <M>JPJavaEnv::CreateJavaVM : A</M>
+    </B> <!-- JPJavaEnv::CreateJavaVM -->
+    <B msg="JPProxy::init" >
+    </B> <!-- JPProxy::init -->
+  </B> <!-- JPEnv::loadJVM -->
+</B> <!-- startup -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : java.lang.Object</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : java.lang.Object</M>
+  </B> <!-- JPTypeManager::findClass -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : java.lang.Throwable</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : java.lang.Throwable</M>
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : java.io.Serializable</M>
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type long</M>
+    </B> <!-- JPField::JPField1 -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type java.lang.String</M>
+    </B> <!-- JPField::JPField1 -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type java.lang.Throwable</M>
+    </B> <!-- JPField::JPField1 -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type java.lang.StackTraceElement[]</M>
+    </B> <!-- JPField::JPField1 -->
+    <B msg="JPMethod::addOverloads" >
+    </B> <!-- JPMethod::addOverloads -->
+  </B> <!-- JPTypeManager::findClass -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : java.lang.RuntimeException</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : java.lang.RuntimeException</M>
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : java.lang.Exception</M>
+      <B msg="JPField::JPField1" >
+        <B msg="JPJni::getType" >
+        </B> <!-- JPJni::getType -->
+        <M>JPField::JPField1 : field type long</M>
+      </B> <!-- JPField::JPField1 -->
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type long</M>
+    </B> <!-- JPField::JPField1 -->
+  </B> <!-- JPTypeManager::findClass -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : jpype.attr</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : jpype.attr</M>
+  </B> <!-- !!!!!!!! EXCEPTION !!!!!! JPTypeManager::findClass -->
+  <B msg="PyJavaException::errorOccurred" >
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : java.lang.NoClassDefFoundError</M>
+      <B msg="JPTypeManager::findClass" >
+        <M>JPTypeManager::findClass : java.lang.LinkageError</M>
+        <B msg="JPTypeManager::findClass" >
+          <M>JPTypeManager::findClass : java.lang.Error</M>
+          <B msg="JPField::JPField1" >
+            <B msg="JPJni::getType" >
+            </B> <!-- JPJni::getType -->
+            <M>JPField::JPField1 : field type long</M>
+          </B> <!-- JPField::JPField1 -->
+        </B> <!-- JPTypeManager::findClass -->
+      </B> <!-- JPTypeManager::findClass -->
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : java.util.Iterator</M>
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="PythonHostEnvironment::newObject" >
+      <M>PythonHostEnvironment::newObject : classname java.lang.NoClassDefFoundError</M>
+    </B> <!-- PythonHostEnvironment::newObject -->
+  </B> <!-- PyJavaException::errorOccurred -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : jpype.attr.Test2</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : jpype.attr.Test2</M>
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : jpype.attr.Test1</M>
+      <B msg="JPField::JPField1" >
+        <B msg="JPJni::getType" >
+        </B> <!-- JPJni::getType -->
+        <M>JPField::JPField1 : field type java.lang.String</M>
+      </B> <!-- JPField::JPField1 -->
+      <B msg="JPField::JPField1" >
+        <B msg="JPJni::getType" >
+        </B> <!-- JPJni::getType -->
+        <M>JPField::JPField1 : field type char</M>
+      </B> <!-- JPField::JPField1 -->
+      <B msg="JPField::JPField1" >
+        <B msg="JPJni::getType" >
+        </B> <!-- JPJni::getType -->
+        <M>JPField::JPField1 : field type java.lang.Object</M>
+      </B> <!-- JPField::JPField1 -->
+      <B msg="JPMethod::addOverloads" >
+      </B> <!-- JPMethod::addOverloads -->
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="JPMethod::addOverloads" >
+    </B> <!-- JPMethod::addOverloads -->
+  </B> <!-- JPTypeManager::findClass -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="JPMethod::findOverload" >
+  <M>JPMethod::findOverload : Got overlaod to check 1</M>
+  <M>JPMethod::findOverload : Trying t match ()</M>
+  <B msg="JPMethodOverload::matches" >
+  </B> <!-- JPMethodOverload::matches -->
+  <M>JPMethod::findOverload :   match ended 3</M>
+</B> <!-- JPMethod::findOverload -->
+<B msg="JPMethodOverload::invokeConstructor" >
+  <M>JPMethodOverload::invokeConstructor : Object created</M>
+</B> <!-- JPMethodOverload::invokeConstructor -->
+<B msg="callMethod" >
+  <M>callMethod : toString</M>
+  <M>callMethod : Arguments : </M>
+  <M>callMethod :        jpype.attr.Test2</M>
+  <B msg="JPMethod::findOverload" >
+    <M>JPMethod::findOverload : Got overlaod to check 3</M>
+    <M>JPMethod::findOverload : Trying t match (Ljava/lang/Object;)Ljava/lang/String;</M>
+    <B msg="JPMethodOverload::matches" >
+      <B msg="JPTypeManager::getType" >
+      </B> <!-- JPTypeManager::getType -->
+    </B> <!-- JPMethodOverload::matches -->
+    <M>JPMethod::findOverload :   match ended 2</M>
+    <M>JPMethod::findOverload : Trying t match (Ljpype/attr/Test1;)Ljava/lang/String;</M>
+    <B msg="JPMethodOverload::matches" >
+      <B msg="JPTypeManager::getType" >
+      </B> <!-- JPTypeManager::getType -->
+    </B> <!-- JPMethodOverload::matches -->
+    <M>JPMethod::findOverload :   match ended 2</M>
+  </B> <!-- !!!!!!!! EXCEPTION !!!!!! JPMethod::findOverload -->
+</B> <!-- callMethod -->
+E<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : jpype.attr</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : jpype.attr</M>
+  </B> <!-- !!!!!!!! EXCEPTION !!!!!! JPTypeManager::findClass -->
+  <B msg="PyJavaException::errorOccurred" >
+    <B msg="PythonHostEnvironment::newObject" >
+      <M>PythonHostEnvironment::newObject : classname java.lang.NoClassDefFoundError</M>
+    </B> <!-- PythonHostEnvironment::newObject -->
+  </B> <!-- PyJavaException::errorOccurred -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : jpype.attr.Test1</M>
+</B> <!-- JPypeModule::findClass -->
+<B msg="JPMethod::findOverload" >
+  <M>JPMethod::findOverload : Got overlaod to check 1</M>
+  <M>JPMethod::findOverload : Trying t match ()</M>
+  <B msg="JPMethodOverload::matches" >
+  </B> <!-- JPMethodOverload::matches -->
+  <M>JPMethod::findOverload :   match ended 3</M>
+</B> <!-- JPMethod::findOverload -->
+<B msg="JPMethodOverload::invokeConstructor" >
+  <M>JPMethodOverload::invokeConstructor : Object created</M>
+</B> <!-- JPMethodOverload::invokeConstructor -->
+.
+======================================================================
+ERROR: testSuperToString (jpypetest.attr.AttributeTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\darkwolf\jpype05\test\jpypetest\attr.py", line 144, in testSuperToString
+    print h
+  File "c:\tools\python23\Lib\site-packages\jpype\_jclass.py", line 104, in <lambda>
+    "__str__" : lambda self : self.toString(),
+RuntimeError: Multiple overloads possible. at src/native/common/jp_method.cpp:100
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.031s
+
+FAILED (errors=1)
+<B msg="shutdown" >
+JVM activity report     :
+	classes loaded       : 20
+JVM has been shutdown
+</B> <!-- shutdown -->

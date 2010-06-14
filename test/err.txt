@@ -1,0 +1,369 @@
+# installing zipimport hook
+import zipimport # builtin
+# installed zipimport hook
+# /usr/lib/python2.5/site.pyc matches /usr/lib/python2.5/site.py
+import site # precompiled from /usr/lib/python2.5/site.pyc
+# /usr/lib/python2.5/os.pyc matches /usr/lib/python2.5/os.py
+import os # precompiled from /usr/lib/python2.5/os.pyc
+import posix # builtin
+# /usr/lib/python2.5/posixpath.pyc matches /usr/lib/python2.5/posixpath.py
+import posixpath # precompiled from /usr/lib/python2.5/posixpath.pyc
+# /usr/lib/python2.5/stat.pyc matches /usr/lib/python2.5/stat.py
+import stat # precompiled from /usr/lib/python2.5/stat.pyc
+# /usr/lib/python2.5/UserDict.pyc matches /usr/lib/python2.5/UserDict.py
+import UserDict # precompiled from /usr/lib/python2.5/UserDict.pyc
+# /usr/lib/python2.5/copy_reg.pyc matches /usr/lib/python2.5/copy_reg.py
+import copy_reg # precompiled from /usr/lib/python2.5/copy_reg.pyc
+# /usr/lib/python2.5/types.pyc matches /usr/lib/python2.5/types.py
+import types # precompiled from /usr/lib/python2.5/types.pyc
+import _types # builtin
+# /var/lib/python-support/python2.5/apport_python_hook.pyc matches /var/lib/python-support/python2.5/apport_python_hook.py
+import apport_python_hook # precompiled from /var/lib/python-support/python2.5/apport_python_hook.pyc
+# /usr/lib/python2.5/warnings.pyc matches /usr/lib/python2.5/warnings.py
+import warnings # precompiled from /usr/lib/python2.5/warnings.pyc
+# /usr/lib/python2.5/linecache.pyc matches /usr/lib/python2.5/linecache.py
+import linecache # precompiled from /usr/lib/python2.5/linecache.pyc
+import encodings # directory /usr/lib/python2.5/encodings
+# /usr/lib/python2.5/encodings/__init__.pyc matches /usr/lib/python2.5/encodings/__init__.py
+import encodings # precompiled from /usr/lib/python2.5/encodings/__init__.pyc
+# /usr/lib/python2.5/codecs.pyc matches /usr/lib/python2.5/codecs.py
+import codecs # precompiled from /usr/lib/python2.5/codecs.pyc
+import _codecs # builtin
+# /usr/lib/python2.5/encodings/aliases.pyc matches /usr/lib/python2.5/encodings/aliases.py
+import encodings.aliases # precompiled from /usr/lib/python2.5/encodings/aliases.pyc
+# /usr/lib/python2.5/encodings/utf_8.pyc matches /usr/lib/python2.5/encodings/utf_8.py
+import encodings.utf_8 # precompiled from /usr/lib/python2.5/encodings/utf_8.pyc
+Python 2.5.1 (r251:54863, May  2 2007, 16:27:44) 
+[GCC 4.1.2 (Ubuntu 4.1.2-0ubuntu4)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+# /usr/lib/python2.5/unittest.pyc matches /usr/lib/python2.5/unittest.py
+import unittest # precompiled from /usr/lib/python2.5/unittest.pyc
+dlopen("/usr/lib/python2.5/lib-dynload/time.so", 2);
+import time # dynamically loaded from /usr/lib/python2.5/lib-dynload/time.so
+# /usr/lib/python2.5/traceback.pyc matches /usr/lib/python2.5/traceback.py
+import traceback # precompiled from /usr/lib/python2.5/traceback.pyc
+# /usr/lib/python2.5/new.pyc matches /usr/lib/python2.5/new.py
+import new # precompiled from /usr/lib/python2.5/new.pyc
+import jpypetest # directory /home/steve/.workspace/jpype05/test/jpypetest
+# /home/steve/.workspace/jpype05/test/jpypetest/__init__.pyc matches /home/steve/.workspace/jpype05/test/jpypetest/__init__.py
+import jpypetest # precompiled from /home/steve/.workspace/jpype05/test/jpypetest/__init__.pyc
+# /home/steve/.workspace/jpype05/test/jpypetest/common.pyc matches /home/steve/.workspace/jpype05/test/jpypetest/common.py
+import jpypetest.common # precompiled from /home/steve/.workspace/jpype05/test/jpypetest/common.pyc
+import jpype # directory /usr/lib/python2.5/site-packages/jpype
+# /usr/lib/python2.5/site-packages/jpype/__init__.pyc matches /usr/lib/python2.5/site-packages/jpype/__init__.py
+import jpype # precompiled from /usr/lib/python2.5/site-packages/jpype/__init__.pyc
+# /usr/lib/python2.5/site-packages/jpype/_jpackage.pyc matches /usr/lib/python2.5/site-packages/jpype/_jpackage.py
+import jpype._jpackage # precompiled from /usr/lib/python2.5/site-packages/jpype/_jpackage.pyc
+dlopen("/usr/lib/python2.5/site-packages/_jpype.so", 2);
+import _jpype # dynamically loaded from /usr/lib/python2.5/site-packages/_jpype.so
+# /usr/lib/python2.5/site-packages/jpype/_jclass.pyc matches /usr/lib/python2.5/site-packages/jpype/_jclass.py
+import jpype._jclass # precompiled from /usr/lib/python2.5/site-packages/jpype/_jclass.pyc
+# /usr/lib/python2.5/site-packages/jpype/_jexception.pyc matches /usr/lib/python2.5/site-packages/jpype/_jexception.py
+import jpype._jexception # precompiled from /usr/lib/python2.5/site-packages/jpype/_jexception.pyc
+# /usr/lib/python2.5/site-packages/jpype/_jcollection.pyc matches /usr/lib/python2.5/site-packages/jpype/_jcollection.py
+import jpype._jcollection # precompiled from /usr/lib/python2.5/site-packages/jpype/_jcollection.pyc
+dlopen("/usr/lib/python2.5/lib-dynload/operator.so", 2);
+import operator # dynamically loaded from /usr/lib/python2.5/lib-dynload/operator.so
+# /usr/lib/python2.5/site-packages/jpype/_pykeywords.pyc matches /usr/lib/python2.5/site-packages/jpype/_pykeywords.py
+import jpype._pykeywords # precompiled from /usr/lib/python2.5/site-packages/jpype/_pykeywords.pyc
+# /usr/lib/python2.5/sets.pyc matches /usr/lib/python2.5/sets.py
+import sets # precompiled from /usr/lib/python2.5/sets.pyc
+# /usr/lib/python2.5/__future__.pyc matches /usr/lib/python2.5/__future__.py
+import __future__ # precompiled from /usr/lib/python2.5/__future__.pyc
+dlopen("/usr/lib/python2.5/lib-dynload/itertools.so", 2);
+import itertools # dynamically loaded from /usr/lib/python2.5/lib-dynload/itertools.so
+# /usr/lib/python2.5/site-packages/jpype/_jarray.pyc matches /usr/lib/python2.5/site-packages/jpype/_jarray.py
+import jpype._jarray # precompiled from /usr/lib/python2.5/site-packages/jpype/_jarray.pyc
+# /usr/lib/python2.5/site-packages/jpype/_jwrapper.pyc matches /usr/lib/python2.5/site-packages/jpype/_jwrapper.py
+import jpype._jwrapper # precompiled from /usr/lib/python2.5/site-packages/jpype/_jwrapper.pyc
+# /usr/lib/python2.5/site-packages/jpype/_jproxy.pyc matches /usr/lib/python2.5/site-packages/jpype/_jproxy.py
+import jpype._jproxy # precompiled from /usr/lib/python2.5/site-packages/jpype/_jproxy.pyc
+# /usr/lib/python2.5/site-packages/jpype/JClassUtil.pyc matches /usr/lib/python2.5/site-packages/jpype/JClassUtil.py
+import jpype.JClassUtil # precompiled from /usr/lib/python2.5/site-packages/jpype/JClassUtil.pyc
+# /usr/lib/python2.5/site-packages/jpype/_core.pyc matches /usr/lib/python2.5/site-packages/jpype/_core.py
+import jpype._core # precompiled from /usr/lib/python2.5/site-packages/jpype/_core.pyc
+# /usr/lib/python2.5/site-packages/jpype/_jobject.pyc matches /usr/lib/python2.5/site-packages/jpype/_jobject.py
+import jpype._jobject # precompiled from /usr/lib/python2.5/site-packages/jpype/_jobject.pyc
+# /usr/lib/python2.5/site-packages/jpype/_properties.pyc matches /usr/lib/python2.5/site-packages/jpype/_properties.py
+import jpype._properties # precompiled from /usr/lib/python2.5/site-packages/jpype/_properties.pyc
+# /usr/lib/python2.5/site-packages/jpype/nio.pyc matches /usr/lib/python2.5/site-packages/jpype/nio.py
+import jpype.nio # precompiled from /usr/lib/python2.5/site-packages/jpype/nio.pyc
+dlopen("/usr/lib/python2.5/lib-dynload/array.so", 2);
+import array # dynamically loaded from /usr/lib/python2.5/lib-dynload/array.so
+# /usr/lib/python2.5/site-packages/jpype/_refdaemon.pyc matches /usr/lib/python2.5/site-packages/jpype/_refdaemon.py
+import jpype._refdaemon # precompiled from /usr/lib/python2.5/site-packages/jpype/_refdaemon.pyc
+import thread # builtin
+# /usr/lib/python2.5/site-packages/jpype/_gui.pyc matches /usr/lib/python2.5/site-packages/jpype/_gui.py
+import jpype._gui # precompiled from /usr/lib/python2.5/site-packages/jpype/_gui.pyc
+# /home/steve/.workspace/jpype05/test/jpypetest/array.pyc matches /home/steve/.workspace/jpype05/test/jpypetest/array.py
+import jpypetest.array # precompiled from /home/steve/.workspace/jpype05/test/jpypetest/array.pyc
+# /home/steve/.workspace/jpype05/test/jpypetest/attr.pyc matches /home/steve/.workspace/jpype05/test/jpypetest/attr.py
+import jpypetest.attr # precompiled from /home/steve/.workspace/jpype05/test/jpypetest/attr.pyc
+# /home/steve/.workspace/jpype05/test/jpypetest/objectwrapper.pyc matches /home/steve/.workspace/jpype05/test/jpypetest/objectwrapper.py
+import jpypetest.objectwrapper # precompiled from /home/steve/.workspace/jpype05/test/jpypetest/objectwrapper.pyc
+# /home/steve/.workspace/jpype05/test/jpypetest/proxy.pyc matches /home/steve/.workspace/jpype05/test/jpypetest/proxy.py
+import jpypetest.proxy # precompiled from /home/steve/.workspace/jpype05/test/jpypetest/proxy.pyc
+# /home/steve/.workspace/jpype05/test/jpypetest/numeric.pyc matches /home/steve/.workspace/jpype05/test/jpypetest/numeric.py
+import jpypetest.numeric # precompiled from /home/steve/.workspace/jpype05/test/jpypetest/numeric.pyc
+# /home/steve/.workspace/jpype05/test/jpypetest/exc.pyc matches /home/steve/.workspace/jpype05/test/jpypetest/exc.py
+import jpypetest.exc # precompiled from /home/steve/.workspace/jpype05/test/jpypetest/exc.pyc
+# /home/steve/.workspace/jpype05/test/jpypetest/serial.pyc matches /home/steve/.workspace/jpype05/test/jpypetest/serial.py
+import jpypetest.serial # precompiled from /home/steve/.workspace/jpype05/test/jpypetest/serial.pyc
+# /home/steve/.workspace/jpype05/test/jpypetest/mro.pyc matches /home/steve/.workspace/jpype05/test/jpypetest/mro.py
+import jpypetest.mro # precompiled from /home/steve/.workspace/jpype05/test/jpypetest/mro.pyc
+# /usr/lib/python2.5/site-packages/jpype/_linux.pyc matches /usr/lib/python2.5/site-packages/jpype/_linux.py
+import jpype._linux # precompiled from /usr/lib/python2.5/site-packages/jpype/_linux.pyc
+# /usr/lib/python2.5/re.pyc matches /usr/lib/python2.5/re.py
+import re # precompiled from /usr/lib/python2.5/re.pyc
+# /usr/lib/python2.5/sre_compile.pyc matches /usr/lib/python2.5/sre_compile.py
+import sre_compile # precompiled from /usr/lib/python2.5/sre_compile.pyc
+import _sre # builtin
+# /usr/lib/python2.5/sre_constants.pyc matches /usr/lib/python2.5/sre_constants.py
+import sre_constants # precompiled from /usr/lib/python2.5/sre_constants.pyc
+# /usr/lib/python2.5/sre_parse.pyc matches /usr/lib/python2.5/sre_parse.py
+import sre_parse # precompiled from /usr/lib/python2.5/sre_parse.pyc
+<B msg="startup" >
+  <B msg="JPyString::asString" >
+  </B> <!-- JPyString::asString -->
+  <B msg="JPyString::asString" >
+  </B> <!-- JPyString::asString -->
+  <B msg="JPyString::asString" >
+  </B> <!-- JPyString::asString -->
+  <B msg="JPyString::asString" >
+  </B> <!-- JPyString::asString -->
+  <B msg="JPyString::asString" >
+  </B> <!-- JPyString::asString -->
+  <B msg="JPEnv::loadJVM" >
+    <B msg="JPJavaEnv::load" >
+    </B> <!-- JPJavaEnv::load -->
+    <B msg="JPJavaEnv::CreateJavaVM" >
+      <M>JPJavaEnv::CreateJavaVM : A</M>
+    </B> <!-- JPJavaEnv::CreateJavaVM -->
+    <B msg="JPProxy::init" >
+    </B> <!-- JPProxy::init -->
+  </B> <!-- JPEnv::loadJVM -->
+</B> <!-- startup -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : java.lang.Object</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : java.lang.Object</M>
+  </B> <!-- JPTypeManager::findClass -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : java.lang.Throwable</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : java.lang.Throwable</M>
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : java.io.Serializable</M>
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type long</M>
+    </B> <!-- JPField::JPField1 -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type java.lang.String</M>
+    </B> <!-- JPField::JPField1 -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type java.lang.Throwable</M>
+    </B> <!-- JPField::JPField1 -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type java.lang.StackTraceElement[]</M>
+    </B> <!-- JPField::JPField1 -->
+    <B msg="JPMethod::addOverloads" >
+      <B msg="JPMethodOverload::isSameOverload" >
+        <M>JPMethodOverload::isSameOverload : My sig (Ljava/lang/Throwable;)</M>
+        <M>JPMethodOverload::isSameOverload : It's sig (Ljava/lang/Object;)</M>
+      </B> <!-- JPMethodOverload::isSameOverload -->
+    </B> <!-- JPMethod::addOverloads -->
+  </B> <!-- JPTypeManager::findClass -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="PyJPClass::__dealloc__" >
+</B> <!-- PyJPClass::__dealloc__ -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : java.lang.RuntimeException</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : java.lang.RuntimeException</M>
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : java.lang.Exception</M>
+      <B msg="JPField::JPField1" >
+        <B msg="JPJni::getType" >
+        </B> <!-- JPJni::getType -->
+        <M>JPField::JPField1 : field type long</M>
+      </B> <!-- JPField::JPField1 -->
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type long</M>
+    </B> <!-- JPField::JPField1 -->
+  </B> <!-- JPTypeManager::findClass -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="PyJPClass::__dealloc__" >
+</B> <!-- PyJPClass::__dealloc__ -->
+<B msg="PyJPClass::__dealloc__" >
+</B> <!-- PyJPClass::__dealloc__ -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : jpype.attr</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : jpype.attr</M>
+  </B> <!-- !!!!!!!! EXCEPTION !!!!!! JPTypeManager::findClass -->
+  <B msg="PyJavaException::errorOccurred" >
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : java.lang.NoClassDefFoundError</M>
+      <B msg="JPTypeManager::findClass" >
+        <M>JPTypeManager::findClass : java.lang.LinkageError</M>
+        <B msg="JPTypeManager::findClass" >
+          <M>JPTypeManager::findClass : java.lang.Error</M>
+          <B msg="JPField::JPField1" >
+            <B msg="JPJni::getType" >
+            </B> <!-- JPJni::getType -->
+            <M>JPField::JPField1 : field type long</M>
+          </B> <!-- JPField::JPField1 -->
+        </B> <!-- JPTypeManager::findClass -->
+      </B> <!-- JPTypeManager::findClass -->
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : java.util.Collection</M>
+      <B msg="JPTypeManager::findClass" >
+        <M>JPTypeManager::findClass : java.lang.Iterable</M>
+      </B> <!-- JPTypeManager::findClass -->
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : java.util.List</M>
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : java.util.Map</M>
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="JPTypeManager::findClass" >
+      <M>JPTypeManager::findClass : java.util.Iterator</M>
+    </B> <!-- JPTypeManager::findClass -->
+    <B msg="PyJPClass::__dealloc__" >
+    </B> <!-- PyJPClass::__dealloc__ -->
+    <B msg="PyJPClass::__dealloc__" >
+    </B> <!-- PyJPClass::__dealloc__ -->
+    <B msg="PyJPClass::__dealloc__" >
+    </B> <!-- PyJPClass::__dealloc__ -->
+    <B msg="PyJPClass::__dealloc__" >
+    </B> <!-- PyJPClass::__dealloc__ -->
+    <B msg="PythonHostEnvironment::newObject" >
+      <M>PythonHostEnvironment::newObject : classname java.lang.NoClassDefFoundError</M>
+      <B msg="PyJPClass::__dealloc__" >
+      </B> <!-- PyJPClass::__dealloc__ -->
+    </B> <!-- PythonHostEnvironment::newObject -->
+  </B> <!-- PyJavaException::errorOccurred -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : jpype.attr.Test1</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : jpype.attr.Test1</M>
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type java.lang.String</M>
+    </B> <!-- JPField::JPField1 -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type char</M>
+    </B> <!-- JPField::JPField1 -->
+    <B msg="JPField::JPField1" >
+      <B msg="JPJni::getType" >
+      </B> <!-- JPJni::getType -->
+      <M>JPField::JPField1 : field type java.lang.Object</M>
+    </B> <!-- JPField::JPField1 -->
+    <B msg="JPMethod::addOverloads" >
+      <B msg="JPMethodOverload::isSameOverload" >
+        <M>JPMethodOverload::isSameOverload : My sig (Ljpype/attr/Test1;)</M>
+        <M>JPMethodOverload::isSameOverload : It's sig (Ljava/lang/Object;)</M>
+      </B> <!-- JPMethodOverload::isSameOverload -->
+    </B> <!-- JPMethod::addOverloads -->
+  </B> <!-- JPTypeManager::findClass -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="PyJPClass::__dealloc__" >
+</B> <!-- PyJPClass::__dealloc__ -->
+<B msg="JPMethod::findOverload" >
+  <M>JPMethod::findOverload : Got overlaod to check 1</M>
+  <M>JPMethod::findOverload : Trying t match ()</M>
+  <B msg="JPMethodOverload::matches" >
+  </B> <!-- JPMethodOverload::matches -->
+  <M>JPMethod::findOverload :   match ended 3</M>
+</B> <!-- JPMethod::findOverload -->
+<B msg="JPMethodOverload::invokeConstructor" >
+  <M>JPMethodOverload::invokeConstructor : Object created</M>
+</B> <!-- JPMethodOverload::invokeConstructor -->
+E<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : jpype.attr</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : jpype.attr</M>
+  </B> <!-- !!!!!!!! EXCEPTION !!!!!! JPTypeManager::findClass -->
+  <B msg="PyJavaException::errorOccurred" >
+    <B msg="PyJPClass::__dealloc__" >
+    </B> <!-- PyJPClass::__dealloc__ -->
+    <B msg="PythonHostEnvironment::newObject" >
+      <M>PythonHostEnvironment::newObject : classname java.lang.NoClassDefFoundError</M>
+      <B msg="PyJPClass::__dealloc__" >
+      </B> <!-- PyJPClass::__dealloc__ -->
+    </B> <!-- PythonHostEnvironment::newObject -->
+  </B> <!-- PyJavaException::errorOccurred -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="JPypeModule::findClass" >
+  <M>JPypeModule::findClass : jpype.attr.Test2</M>
+  <B msg="JPTypeManager::findClass" >
+    <M>JPTypeManager::findClass : jpype.attr.Test2</M>
+    <B msg="JPMethod::addOverloads" >
+      <B msg="JPMethodOverload::isSameOverload" >
+        <M>JPMethodOverload::isSameOverload : My sig (Ljpype/attr/Test2;Ljava/lang/String;Ljava/lang/String;)</M>
+        <M>JPMethodOverload::isSameOverload : It's sig (Ljpype/attr/Test1;Ljava/lang/String;Ljava/lang/String;)</M>
+      </B> <!-- JPMethodOverload::isSameOverload -->
+    </B> <!-- JPMethod::addOverloads -->
+    <B msg="JPMethod::addOverloads" >
+    </B> <!-- JPMethod::addOverloads -->
+  </B> <!-- JPTypeManager::findClass -->
+</B> <!-- JPypeModule::findClass -->
+<B msg="PyJPClass::__dealloc__" >
+</B> <!-- PyJPClass::__dealloc__ -->
+<B msg="JPMethod::findOverload" >
+  <M>JPMethod::findOverload : Got overlaod to check 1</M>
+  <M>JPMethod::findOverload : Trying t match ()</M>
+  <B msg="JPMethodOverload::matches" >
+  </B> <!-- JPMethodOverload::matches -->
+  <M>JPMethod::findOverload :   match ended 3</M>
+</B> <!-- JPMethod::findOverload -->
+<B msg="JPMethodOverload::invokeConstructor" >
+  <M>JPMethodOverload::invokeConstructor : Object created</M>
+</B> <!-- JPMethodOverload::invokeConstructor -->
+<B msg="PyJPBoundMethod::__call__" >
+  <M>PyJPBoundMethod::__call__ : toString</M>
+  <B msg="JPMethod::findOverload" >
+    <M>JPMethod::findOverload : Got overlaod to check 2</M>
+    <M>JPMethod::findOverload : Trying t match (Ljpype/attr/Test1;)</M>
+    <B msg="JPMethodOverload::matches" >
+      <B msg="JPTypeManager::getType" >
+      </B> <!-- JPTypeManager::getType -->
+    </B> <!-- JPMethodOverload::matches -->
+    <M>JPMethod::findOverload :   match ended 2</M>
+    <M>JPMethod::findOverload : Trying t match (Ljpype/attr/Test2;Ljava/lang/String;)</M>
+    <B msg="JPMethodOverload::matches" >
+    </B> <!-- JPMethodOverload::matches -->
+    <M>JPMethod::findOverload :   match ended 0</M>
+    <M>JPMethod::findOverload :  Match is smaller than exact AND explicit</M>
+  </B> <!-- JPMethod::findOverload -->
+  <B msg="JPMethodOverload::invokeInstance" >
+    <B msg="JPTypeManager::getType" >
+    </B> <!-- JPTypeManager::getType -->
+    <B msg="JPObjectType::invoke" >
+      <B msg="JPTypeManager::getType" >
+      </B> <!-- JPTypeManager::getType -->
+      <B msg="JPStringType::asHostObject" >
+        <M>JPStringType::asHostObject :  Performing wrapping</M>
+      </B> <!-- JPStringType::asHostObject -->
+    </B> <!-- JPObjectType::invoke -->
+  </B> <!-- JPMethodOverload::invokeInstance -->
+</B> <!-- PyJPBoundMethod::__call__ -->

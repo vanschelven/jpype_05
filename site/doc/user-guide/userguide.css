@@ -1,0 +1,51 @@
+.pHr { color: #666699; background-color: #666699}
+
+p.pTOC2
+{
+  color: Black;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 2.5em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pTOC3
+{
+  color: Black;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 5em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+p.pTOC4
+{
+  color: Black;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-left: 7.5em;
+  margin-right: 0em;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0em;
+  text-transform: none
+}
+
+code.pythoncode
+{
+  color: Black;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+}
+
+

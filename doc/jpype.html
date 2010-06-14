@@ -1,0 +1,230 @@
+
+<!doctype html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module jpype</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>jpype</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///D|/darkwolf/jpype/doc/jpype.py">d:\darkwolf\jpype\doc\jpype.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;this&nbsp;module&nbsp;is&nbsp;onyl&nbsp;a&nbsp;skeleton&nbsp;to&nbsp;allow&nbsp;auto-generation&nbsp;of&nbsp;the&nbsp;documentation</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="jpype.html#JArray">JArray</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JBoolean">JBoolean</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JByte">JByte</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JChar">JChar</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JDouble">JDouble</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JFloat">JFloat</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JInt">JInt</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JLong">JLong</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JObject">JObject</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JPackage">JPackage</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JProxy">JProxy</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JShort">JShort</a>
+</font></dt><dt><font face="helvetica, arial"><a href="jpype.html#JString">JString</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JArray">class <strong>JArray</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Wrapper&nbsp;class&nbsp;to&nbsp;manage&nbsp;Java&nbsp;arrays&nbsp;of&nbsp;a&nbsp;given&nbsp;type&nbsp;and&nbsp;number&nbsp;fo&nbsp;dimensions.&nbsp;<br>
+&nbsp;<br>
+It&nbsp;implements&nbsp;most&nbsp;of&nbsp;the&nbsp;sequence&nbsp;functionality,&nbsp;It&nbsp;is&nbsp;like&nbsp;a&nbsp;list&nbsp;in&nbsp;that&nbsp;it's&nbsp;content&nbsp;can&nbsp;be&nbsp;modified,&nbsp;but&nbsp;also&nbsp;like&nbsp;tuple&nbsp;since&nbsp;it&nbsp;cannot&nbsp;be&nbsp;resized.<br>
+It&nbsp;cannot&nbsp;be&nbsp;currently&nbsp;created&nbsp;from&nbsp;python.&nbsp;They&nbsp;are&nbsp;only&nbsp;used&nbsp;to&nbsp;wrap&nbsp;return&nbsp;values&nbsp;from&nbsp;java&nbsp;method&nbsp;or&nbsp;fields.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"></td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JBoolean">class <strong>JBoolean</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Wrapper&nbsp;class&nbsp;to&nbsp;manage&nbsp;Java&nbsp;primitive&nbsp;boolean.&nbsp;Used&nbsp;mainly&nbsp;to&nbsp;resolve&nbsp;ambiguity&nbsp;in&nbsp;method&nbsp;calls.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JBoolean-__init__"><strong>__init__</strong></a>(self, v)</dt><dd><tt>Only&nbsp;legal&nbsp;values&nbsp;of&nbsp;v&nbsp;are&nbsp;int</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JByte">class <strong>JByte</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Wrapper&nbsp;class&nbsp;to&nbsp;manage&nbsp;Java&nbsp;primitive&nbsp;byte.&nbsp;Used&nbsp;mainly&nbsp;to&nbsp;resolve&nbsp;ambiguity&nbsp;in&nbsp;method&nbsp;calls.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JByte-__init__"><strong>__init__</strong></a>(self, v)</dt><dd><tt>Only&nbsp;legal&nbsp;values&nbsp;of&nbsp;v&nbsp;are&nbsp;int&nbsp;and&nbsp;long.&nbsp;An&nbsp;exception&nbsp;will&nbsp;be&nbsp;raised&nbsp;if&nbsp;the&nbsp;value&nbsp;does&nbsp;not&nbsp;in&nbsp;in&nbsp;the&nbsp;java&nbsp;byte&nbsp;(signed&nbsp;8&nbsp;bit&nbsp;integer)</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JChar">class <strong>JChar</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Wrapper&nbsp;class&nbsp;to&nbsp;manage&nbsp;Java&nbsp;primitive&nbsp;char.&nbsp;Used&nbsp;mainly&nbsp;to&nbsp;resolve&nbsp;ambiguity&nbsp;in&nbsp;method&nbsp;calls.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JChar-__init__"><strong>__init__</strong></a>(self, v)</dt><dd><tt>v&nbsp;must&nbsp;be&nbsp;a&nbsp;single&nbsp;character&nbsp;string&nbsp;or&nbsp;unicode&nbsp;object.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JDouble">class <strong>JDouble</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Wrapper&nbsp;class&nbsp;to&nbsp;manage&nbsp;Java&nbsp;primitive&nbsp;double.&nbsp;Used&nbsp;mainly&nbsp;to&nbsp;resolve&nbsp;ambiguity&nbsp;in&nbsp;method&nbsp;calls.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JDouble-__init__"><strong>__init__</strong></a>(self, v)</dt><dd><tt>Only&nbsp;legal&nbsp;values&nbsp;of&nbsp;v&nbsp;are&nbsp;float.&nbsp;An&nbsp;exception&nbsp;will&nbsp;be&nbsp;raised&nbsp;if&nbsp;the&nbsp;value&nbsp;does&nbsp;not&nbsp;in&nbsp;in&nbsp;the&nbsp;java&nbsp;byte&nbsp;(signed&nbsp;64&nbsp;bit&nbsp;float)</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JFloat">class <strong>JFloat</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Wrapper&nbsp;class&nbsp;to&nbsp;manage&nbsp;Java&nbsp;primitive&nbsp;float.&nbsp;Used&nbsp;mainly&nbsp;to&nbsp;resolve&nbsp;ambiguity&nbsp;in&nbsp;method&nbsp;calls.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JFloat-__init__"><strong>__init__</strong></a>(self, v)</dt><dd><tt>Only&nbsp;legal&nbsp;values&nbsp;of&nbsp;v&nbsp;are&nbsp;float.&nbsp;An&nbsp;exception&nbsp;will&nbsp;be&nbsp;raised&nbsp;if&nbsp;the&nbsp;value&nbsp;does&nbsp;not&nbsp;in&nbsp;in&nbsp;the&nbsp;java&nbsp;byte&nbsp;(signed&nbsp;32&nbsp;bit&nbsp;float)</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JInt">class <strong>JInt</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Wrapper&nbsp;class&nbsp;to&nbsp;manage&nbsp;Java&nbsp;primitive&nbsp;int.&nbsp;Used&nbsp;mainly&nbsp;to&nbsp;resolve&nbsp;ambiguity&nbsp;in&nbsp;method&nbsp;calls.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JInt-__init__"><strong>__init__</strong></a>(self, v)</dt><dd><tt>Only&nbsp;legal&nbsp;values&nbsp;of&nbsp;v&nbsp;are&nbsp;int&nbsp;and&nbsp;long.&nbsp;An&nbsp;exception&nbsp;will&nbsp;be&nbsp;raised&nbsp;if&nbsp;the&nbsp;value&nbsp;does&nbsp;not&nbsp;in&nbsp;in&nbsp;the&nbsp;java&nbsp;byte&nbsp;(signed&nbsp;32&nbsp;bit&nbsp;integer)</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JLong">class <strong>JLong</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Wrapper&nbsp;class&nbsp;to&nbsp;manage&nbsp;Java&nbsp;primitive&nbsp;long.&nbsp;Used&nbsp;mainly&nbsp;to&nbsp;resolve&nbsp;ambiguity&nbsp;in&nbsp;method&nbsp;calls.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JLong-__init__"><strong>__init__</strong></a>(self, v)</dt><dd><tt>Only&nbsp;legal&nbsp;values&nbsp;of&nbsp;v&nbsp;are&nbsp;int&nbsp;and&nbsp;long.&nbsp;An&nbsp;exception&nbsp;will&nbsp;be&nbsp;raised&nbsp;if&nbsp;the&nbsp;value&nbsp;does&nbsp;not&nbsp;in&nbsp;in&nbsp;the&nbsp;java&nbsp;byte&nbsp;(signed&nbsp;64&nbsp;bit&nbsp;integer)</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JObject">class <strong>JObject</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Class&nbsp;used&nbsp;to&nbsp;resolve&nbsp;ambiguities&nbsp;in&nbsp;method&nbsp;calls.&nbsp;This&nbsp;is&nbsp;not&nbsp;the&nbsp;same&nbsp;class&nbsp;as&nbsp;JavaObject,<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JObject-__init__"><strong>__init__</strong></a>(self, v, t)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;object&nbsp;wrapper&nbsp;with&nbsp;a&nbsp;specific&nbsp;target&nbsp;type.<br>
+&nbsp;<br>
+v&nbsp;can&nbsp;be&nbsp;a&nbsp;just&nbsp;about&nbsp;any&nbsp;Python&nbsp;primitive&nbsp;or&nbsp;JPype&nbsp;class,&nbsp;as&nbsp;long&nbsp;as&nbsp;it&nbsp;is&nbsp;compatible&nbsp;with&nbsp;the&nbsp;second&nbsp;parameter.<br>
+t&nbsp;must&nbsp;be&nbsp;a&nbsp;Java&nbsp;type,&nbsp;either&nbsp;as&nbsp;a&nbsp;JavaClass&nbsp;object,&nbsp;or&nbsp;as&nbsp;a&nbsp;String.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JPackage">class <strong>JPackage</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;represents&nbsp;a&nbsp;full&nbsp;or&nbsp;partial&nbsp;java&nbsp;package.&nbsp;All&nbsp;java&nbsp;classes&nbsp;must&nbsp;be&nbsp;accessed&nbsp;through&nbsp;one&nbsp;of&nbsp;these.<br>
+<a href="#JPackage">JPackage</a>&nbsp;are&nbsp;made&nbsp;to&nbsp;appear&nbsp;as&nbsp;though&nbsp;they&nbsp;"contain"&nbsp;sub-package&nbsp;and&nbsp;classes,&nbsp;as&nbsp;they&nbsp;are&nbsp;accessed&nbsp;like&nbsp;normal&nbsp;instance&nbsp;attributes&nbsp;.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JPackage-__init__"><strong>__init__</strong></a>(self, name)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;<a href="#JPackage">JPackage</a>.&nbsp;The&nbsp;name&nbsp;can&nbsp;be&nbsp;either&nbsp;a&nbsp;first&nbsp;part&nbsp;of&nbsp;the&nbsp;package,&nbsp;or&nbsp;a&nbsp;full&nbsp;dot-separated&nbsp;package&nbsp;name.</tt></dd></dl>
+
+<dl><dt><a name="JPackage-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>defined&nbsp;only&nbsp;for&nbsp;better&nbsp;documentation.</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JProxy">class <strong>JProxy</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;<a href="#JProxy">JProxy</a>&nbsp;is&nbsp;used&nbsp;to&nbsp;receive&nbsp;callbacks&nbsp;from&nbsp;java&nbsp;code.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JProxy-__init__"><strong>__init__</strong></a>(self, itf, inst<font color="#909090">=None</font>, dict<font color="#909090">=None</font>)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;<a href="#JProxy">JProxy</a>.<br>
+&nbsp;<br>
+itf&nbsp;can&nbsp;be&nbsp;one&nbsp;of&nbsp;string,&nbsp;Unicode,&nbsp;JavaClass,&nbsp;list/tuple&nbsp;of&nbsp;(string,&nbsp;Unicode&nbsp;or&nbsp;JavaClass).&nbsp;This&nbsp;determines&nbsp;which&nbsp;interface(s)&nbsp;the&nbsp;new&nbsp;proxy&nbsp;will&nbsp;implement.<br>
+inst&nbsp;or&nbsp;dict&nbsp;MUST&nbsp;be&nbsp;passed&nbsp;by&nbsp;name,&nbsp;and&nbsp;only&nbsp;one&nbsp;can&nbsp;be&nbsp;specified.&nbsp;<br>
+inst&nbsp;will&nbsp;receive&nbsp;a&nbsp;Python&nbsp;object&nbsp;instance&nbsp;that&nbsp;implements&nbsp;the&nbsp;right&nbsp;method,&nbsp;as&nbsp;required&nbsp;by&nbsp;the&nbsp;specified&nbsp;interface(s)<br>
+dict&nbsp;will&nbsp;receive&nbsp;a&nbsp;dictionary&nbsp;(or&nbsp;dictionaty-like)&nbsp;object,&nbsp;containing&nbsp;callable&nbsp;object&nbsp;keyed&nbsp;to&nbsp;the&nbsp;method&nbsp;names&nbsp;defined&nbsp;in&nbsp;the&nbsp;interface(s).</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JShort">class <strong>JShort</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Wrapper&nbsp;class&nbsp;to&nbsp;manage&nbsp;Java&nbsp;primitive&nbsp;short.&nbsp;Used&nbsp;mainly&nbsp;to&nbsp;resolve&nbsp;ambiguity&nbsp;in&nbsp;method&nbsp;calls.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JShort-__init__"><strong>__init__</strong></a>(self, v)</dt><dd><tt>Only&nbsp;legal&nbsp;values&nbsp;of&nbsp;v&nbsp;are&nbsp;int&nbsp;and&nbsp;long.&nbsp;An&nbsp;exception&nbsp;will&nbsp;be&nbsp;raised&nbsp;if&nbsp;the&nbsp;value&nbsp;does&nbsp;not&nbsp;in&nbsp;in&nbsp;the&nbsp;java&nbsp;byte&nbsp;(signed&nbsp;16&nbsp;bit&nbsp;integer)</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="JString">class <strong>JString</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Wrapper&nbsp;class&nbsp;to&nbsp;manage&nbsp;Java&nbsp;strings.&nbsp;Used&nbsp;mainly&nbsp;to&nbsp;resolve&nbsp;ambiguity&nbsp;in&nbsp;method&nbsp;calls.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="JString-__init__"><strong>__init__</strong></a>(self, v)</dt><dd><tt>v&nbsp;must&nbsp;be&nbsp;a&nbsp;string&nbsp;or&nbsp;unicode&nbsp;object.</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-attachThreadToJVM"><strong>attachThreadToJVM</strong></a>()</dt><dd><tt>In&nbsp;a&nbsp;multithreaded&nbsp;python&nbsp;applications,&nbsp;any&nbsp;threads&nbsp;not&nbsp;started&nbsp;from&nbsp;within&nbsp;the&nbsp;JVM&nbsp;must&nbsp;call&nbsp;this&nbsp;once&nbsp;before&nbsp;using&nbsp;any&nbsp;of&nbsp;JPype&nbsp;functionality.&nbsp;Failing&nbsp;to&nbsp;do&nbsp;this&nbsp;will&nbsp;result&nbsp;in&nbsp;a&nbsp;exception&nbsp;raised.</tt></dd></dl>
+ <dl><dt><a name="-cleanupProxyCache"><strong>cleanupProxyCache</strong></a>()</dt><dd><tt>Because&nbsp;of&nbsp;the&nbsp;way&nbsp;<a href="#JProxy">JProxy</a>&nbsp;are&nbsp;implemented,&nbsp;it&nbsp;may&nbsp;be&nbsp;necessary&nbsp;to&nbsp;do&nbsp;some&nbsp;cleanup&nbsp;once&nbsp;in&nbsp;a&nbsp;while.&nbsp;This&nbsp;will&nbsp;scan&nbsp;the&nbsp;created&nbsp;proxies&nbsp;and&nbsp;free&nbsp;those&nbsp;that&nbsp;are&nbsp;not&nbsp;used&nbsp;anymore.</tt></dd></dl>
+ <dl><dt><a name="-detachThreadFromJVM"><strong>detachThreadFromJVM</strong></a>()</dt><dd><tt>To&nbsp;provide&nbsp;cleanup,&nbsp;any&nbsp;python&nbsp;thread&nbsp;that&nbsp;called&nbsp;<a href="#-attachThreadToJVM">attachThreadToJVM</a>()&nbsp;should&nbsp;call&nbsp;this&nbsp;method&nbsp;before&nbsp;finishing.</tt></dd></dl>
+ <dl><dt><a name="-dumpJVMStats"><strong>dumpJVMStats</strong></a>()</dt><dd><tt>Simple&nbsp;tracing&nbsp;method&nbsp;that&nbsp;will&nbsp;print&nbsp;out&nbsp;various&nbsp;statistics&nbsp;about&nbsp;what&nbsp;JVM&nbsp;usage.</tt></dd></dl>
+ <dl><dt><a name="-getDefaultJVMPath"><strong>getDefaultJVMPath</strong></a>()</dt><dd><tt>Try&nbsp;to&nbsp;find&nbsp;the&nbsp;location&nbsp;of&nbsp;the&nbsp;JVM.dll&nbsp;(or&nbsp;jvm.so,&nbsp;depending&nbsp;on&nbsp;platform)&nbsp;so&nbsp;that&nbsp;program&nbsp;do&nbsp;not&nbsp;need&nbsp;to&nbsp;hardcode&nbsp;it.&nbsp;<br>
+Currently&nbsp;only&nbsp;works&nbsp;on&nbsp;win32.<br>
+Since&nbsp;many&nbsp;platforms&nbsp;do&nbsp;not&nbsp;define&nbsp;a&nbsp;consistent&nbsp;way&nbsp;to&nbsp;install&nbsp;the&nbsp;Jave&nbsp;Runtime&nbsp;Environment,&nbsp;it&nbsp;is&nbsp;possible&nbsp;this&nbsp;method&nbsp;will&nbsp;fail.&nbsp;In&nbsp;which&nbsp;case&nbsp;it&nbsp;will&nbsp;return&nbsp;None.</tt></dd></dl>
+ <dl><dt><a name="-isJVMStarted"><strong>isJVMStarted</strong></a>()</dt><dd><tt>Check&nbsp;if&nbsp;starJVM&nbsp;has&nbsp;successfully&nbsp;be&nbsp;called&nbsp;before,&nbsp;without&nbsp;<a href="#-shutdownJVM">shutdownJVM</a>().</tt></dd></dl>
+ <dl><dt><a name="-isThreadAttachedToJVM"><strong>isThreadAttachedToJVM</strong></a>()</dt><dd><tt>Check&nbsp;if&nbsp;the&nbsp;current&nbsp;thread&nbsp;is&nbsp;attached&nbsp;to&nbsp;the&nbsp;JVM.</tt></dd></dl>
+ <dl><dt><a name="-shutdownJVM"><strong>shutdownJVM</strong></a>()</dt></dl>
+ <dl><dt><a name="-startJVM"><strong>startJVM</strong></a>(vmPath, *arg)</dt></dl>
+ <dl><dt><a name="-synchronized"><strong>synchronized</strong></a>(obj)</dt></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>java</strong> = predefined JPackage for java package named &lt;java&gt;<br>
+<strong>javax</strong> = predefined JPackage for java package named &lt;java&gt;</td></tr></table>
+</body></html>

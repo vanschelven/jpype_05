@@ -1,0 +1,110 @@
+This file explain what each version adds.
+
+Version 0.1 :
+	Features :
+    * Call any Java method.
+    * Access any Java field.
+    * Instantiate any Java class.
+    * Provide wrapper classes.
+    * Setup/shutdown JVM, along eith startup parameters like classpath, etc ...
+    * JavaObject supports the __class__ attribute
+    * JavaObject routes the __str__ method to toString()
+    * JavaClass supports the __isinstance__ method
+	
+version 0.2 :
+	Features :
+	* JObject wrapper
+	* Support for array types received from Java.
+	* Better documentation
+	* Threading support
+	* Installation / distribution now done via disutil
+	
+version 0.3 :
+	Features :
+	* Threading enhancements
+	* Java Proxy support for callbacks
+	* Test harness
+	* Linux support
+	* Autodetection of the JVM
+	* Ability to create java arrays from python
+	* Started on some utility packages to ease using some Java packages. see python packages jpype and jpypex
+		
+version 0.3b3 :
+	Features :
+	
+	Bug Fixes :
+	
+	Other enhancement :
+	* Improved string convertion to/from java
+
+version 0.4 :
+	Features :
+	* Completely re-written, with an eye toward modularity, extensibility, and memory management.
+	* Improved type matching for calling overloaded methods with similar types.
+	* Modified JArray wrapper constructor, for improved clarity.
+	* Modified JObject wrapper constructor, for improved clarity.
+	* Added JavaException to cleanly catch java exceptions
+	* Added JException wrapper, to create python-compatible exceptions.
+	* Added __bases__, __hash__ and __doc__ to JavaClass
+	* Added __class__ and __hash__ to JavaObject	
+	* Added __doc__ to JavaMethod
+	
+	Bug Fixes :
+	* bug 1028537 : Problem with JInt
+	* bug 1042546 : Can't pass arrays as arguments
+	* bug 1045648 : Linux support gone in 0.4b1
+	* bug 1045650 : 0.4b1 works only with JDK 1.5
+	* bug 1048102 : catching java exceptions
+	* bug 1048097 : Nan get converted to 0.0	
+	* bug 1050042 : Program terminates abnormaly after an exception in thrown
+	
+version 0.5b1 :
+	Features :
+	* Python-specific layer largely re-written in python instead of C++. 
+	  This means I no longer have to "emulate" python behavior in my extension classes. 
+	  Lookup of fields and methods now follow Python's mechanism.
+	* Mapped __eq__ and __ne__ to Java's equals()
+	* Java classes that implement java.lang.Comparable now have __cmp__ defined
+	* Java variables and methods that conflict with python keywords are now pre-pended with a "_"
+	* Java Collection, List, Set and Map now behave like Pythojn equivalents and are iteratable.
+	* Java Iterator and Enumeration are now iteratable
+	* Java exception types are now easier to throw/catch by using type.PY_EXC
+	* Java properties (get/set) now mapped to Python properties, so they can be accessed like 
+	  normal instance variables.
+	* Added "customizer" for Java classes, to add python behavior when the Python shadow class is created.
+	* Added JClass wrapper (similar to JPackage) to load a class in one go, and allow loading classes in 
+	  the "default" package.
+	
+version 0.5.2 :
+	* Miscellaneous bug fixes.
+	
+version 0.5.2.1 :
+	* Removed tracing that got left behind
+	
+version 0.5.2.2 :
+	* source changes to remove warning on GCC 4.1
+	* Changes to allow Jpype to compile with Python 2.5 on 64-bit systems
+	
+version 0.5.3 :
+	* Miscellaneous cleanups in code to allow porting to more platforms (notably HP-UX)
+	
+	Bug Fixes :
+	* [ 1760791 ] Proxy problem on java 6
+	* [ 1714755 ] setup.py bug on linux
+	* [ 1708462 ] Wrong matchReport() invoked for PyJPBoundMethod objs 
+	* [ 1590183 ] Memory Leak
+	* [ 1292445 ] Can't create JFloat wrappers for numbers <= 0.0
+	* [ 1700278 ] Problem with storing JArrays in Vectors
+	* [ 1536323 ] A bug in JProxy with multiple interfaces
+	
+version 0.5.4 :
+	Bug fixes :
+	* [ 2384164 ] JPype and Python 2.6
+	
+version 0.5.4.1 :
+	Bug fixes :
+	* [ 2545325 ] Compilation problems on Ubuntu Itrepid
+
+
+	
+
