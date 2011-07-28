@@ -105,6 +105,9 @@ version 0.5.4.1 :
 	Bug fixes :
 	* [ 2545325 ] Compilation problems on Ubuntu Itrepid
 
-
+version 0.5.4.2 :
+	Bug fixes :
+	* Fixed compatibility issue with Python 2.7
+	* Fixed compilaion warnings on Windows regarding usage of sprintf.
 	
 

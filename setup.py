@@ -83,7 +83,7 @@ class JPypeSetup(object):
          
         distSetup( 
             name="JPype", 
-            version="0.5.4",
+            version="0.5.4.2",
             description="Python-Java bridge",
             author="Steve Menard",
             author_email="devilwolf@users.sourceforge.net",
