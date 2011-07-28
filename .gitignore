@@ -1,0 +1,17 @@
+*.ilk
+*.pyd
+*.obj
+*.lib
+*.pdb
+*.sln.old
+*.suo
+*.ncb
+pcbuild/_UpgradeReport_Files/*
+build/*
+pcbuild/UpgradeLog.XML
+*.idb
+BuildLog.htm
+*.sbr
+pcbuild/jpypepython/Debug/*
+pcbuild/jpypepython/Release/*
+*.pyc

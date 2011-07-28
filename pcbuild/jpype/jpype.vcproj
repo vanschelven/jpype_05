@@ -1,119 +1,170 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="9.00"
 	Name="jpype"
-	SccProjectName=""
-	SccLocalPath="">
+	ProjectGUID="{7AAEE509-F4FF-4F26-B0DB-6681BD83E0BD}"
+	RootNamespace="jpype"
+	TargetFrameworkVersion="131072"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory=".\Release"
 			IntermediateDirectory=".\Release"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops;.\paths.vsprops"
 			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="2">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
 				AdditionalIncludeDirectories="c:\tools\jdk5\include\win32;c:\tools\jdk5\include;l:\darkwolf\jpype05\src\native\common\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB"
-				StringPooling="TRUE"
+				StringPooling="true"
 				RuntimeLibrary="2"
-				EnableFunctionLevelLinking="TRUE"
-				UsePrecompiledHeader="2"
+				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="0"
 				PrecompiledHeaderThrough="jpype.h"
 				PrecompiledHeaderFile=".\Release/jpype.pch"
 				AssemblerListingLocation=".\Release/"
 				ObjectFile=".\Release/"
 				ProgramDataBaseFileName=".\Release/"
 				WarningLevel="3"
-				SuppressStartupBanner="TRUE"
-				CompileAs="0"/>
+				SuppressStartupBanner="true"
+				CompileAs="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile=".\Release\jpype.lib"
-				SuppressStartupBanner="TRUE"/>
-			<Tool
-				Name="VCMIDLTool"/>
-			<Tool
-				Name="VCPostBuildEventTool"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG"
-				Culture="3084"/>
+				Culture="3084"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLibrarianTool"
+				OutputFile=".\Release\jpype.lib"
+				SuppressStartupBanner="true"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory=".\Debug"
 			IntermediateDirectory=".\Debug"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops;.\paths.vsprops"
 			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="2">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="c:\tools\jdk6\include\win32;c:\tools\jdk6\include;..\..\src\native\common\include"
+				AdditionalIncludeDirectories="&quot;$(java_home)\include\win32&quot;;&quot;$(java_home)\include&quot;;..\..\src\native\common\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
-				UsePrecompiledHeader="2"
+				UsePrecompiledHeader="0"
 				PrecompiledHeaderThrough="jpype.h"
 				PrecompiledHeaderFile=".\Debug/jpype.pch"
 				AssemblerListingLocation=".\Debug/"
 				ObjectFile=".\Debug/"
 				ProgramDataBaseFileName=".\Debug/"
 				WarningLevel="3"
-				SuppressStartupBanner="TRUE"
+				SuppressStartupBanner="true"
 				DebugInformationFormat="4"
-				CompileAs="0"/>
+				CompileAs="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile=".\Debug\jpype.lib"
-				SuppressStartupBanner="TRUE"/>
-			<Tool
-				Name="VCMIDLTool"/>
-			<Tool
-				Name="VCPostBuildEventTool"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG"
-				Culture="3084"/>
+				Culture="3084"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLibrarianTool"
+				OutputFile=".\Debug\jpype.lib"
+				SuppressStartupBanner="true"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -121,560 +172,707 @@
 	<Files>
 		<Filter
 			Name="Source Files"
-			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+			>
 			<File
-				RelativePath="..\..\src\native\common\jp_array.cpp">
+				RelativePath="..\..\src\native\common\jp_array.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_arrayclass.cpp">
+				RelativePath="..\..\src\native\common\jp_arrayclass.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_class.cpp">
+				RelativePath="..\..\src\native\common\jp_class.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_classbase.cpp">
+				RelativePath="..\..\src\native\common\jp_classbase.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_env.cpp">
+				RelativePath="..\..\src\native\common\jp_env.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_field.cpp">
+				RelativePath="..\..\src\native\common\jp_field.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_invocationhandler.cpp">
+				RelativePath="..\..\src\native\common\jp_invocationhandler.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_javaenv.cpp">
+				RelativePath="..\..\src\native\common\jp_javaenv.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_javaenv_autogen.cpp">
+				RelativePath="..\..\src\native\common\jp_javaenv_autogen.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_jniutil.cpp">
+				RelativePath="..\..\src\native\common\jp_jniutil.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_method.cpp">
+				RelativePath="..\..\src\native\common\jp_method.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_methodoverload.cpp">
+				RelativePath="..\..\src\native\common\jp_methodoverload.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_monitor.cpp">
+				RelativePath="..\..\src\native\common\jp_monitor.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_object.cpp">
+				RelativePath="..\..\src\native\common\jp_object.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_objecttypes.cpp">
+				RelativePath="..\..\src\native\common\jp_objecttypes.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_platform_linux.cpp">
+				RelativePath="..\..\src\native\common\jp_platform_linux.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_platform_win32.cpp">
+				RelativePath="..\..\src\native\common\jp_platform_win32.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_primitivetypes.cpp">
+				RelativePath="..\..\src\native\common\jp_primitivetypes.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_primitivetypes_autogen.cpp">
+				RelativePath="..\..\src\native\common\jp_primitivetypes_autogen.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_proxy.cpp">
+				RelativePath="..\..\src\native\common\jp_proxy.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_reference.cpp">
+				RelativePath="..\..\src\native\common\jp_reference.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_referencequeue.cpp">
+				RelativePath="..\..\src\native\common\jp_referencequeue.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_typemanager.cpp">
+				RelativePath="..\..\src\native\common\jp_typemanager.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_typename.cpp">
+				RelativePath="..\..\src\native\common\jp_typename.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\jp_voidtype.cpp">
+				RelativePath="..\..\src\native\common\jp_voidtype.cpp"
+				>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
-						PreprocessorDefinitions=""/>
+						PreprocessorDefinitions=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						BasicRuntimeChecks="3"/>
+						BasicRuntimeChecks="3"
+					/>
 				</FileConfiguration>
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
-			Filter="h;hpp;hxx;hm;inl">
+			Filter="h;hpp;hxx;hm;inl"
+			>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_array.h">
+				RelativePath="..\..\src\native\common\include\jp_array.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_arrayclass.h">
+				RelativePath="..\..\src\native\common\include\jp_arrayclass.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_class.h">
+				RelativePath="..\..\src\native\common\include\jp_class.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_classbase.h">
+				RelativePath="..\..\src\native\common\include\jp_classbase.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_env.h">
+				RelativePath="..\..\src\native\common\include\jp_env.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_field.h">
+				RelativePath="..\..\src\native\common\include\jp_field.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_hostenv.h">
+				RelativePath="..\..\src\native\common\include\jp_hostenv.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_invocationhandler.h">
+				RelativePath="..\..\src\native\common\include\jp_invocationhandler.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_javaenv.h">
+				RelativePath="..\..\src\native\common\include\jp_javaenv.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_javaenv_autogen.h">
+				RelativePath="..\..\src\native\common\include\jp_javaenv_autogen.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_jniutil.h">
+				RelativePath="..\..\src\native\common\include\jp_jniutil.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_method.h">
+				RelativePath="..\..\src\native\common\include\jp_method.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_methodoverload.h">
+				RelativePath="..\..\src\native\common\include\jp_methodoverload.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_monitor.h">
+				RelativePath="..\..\src\native\common\include\jp_monitor.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_object.h">
+				RelativePath="..\..\src\native\common\include\jp_object.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_objectbase.h">
+				RelativePath="..\..\src\native\common\include\jp_objectbase.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_objecttypes.h">
+				RelativePath="..\..\src\native\common\include\jp_objecttypes.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_platform_linux.h">
+				RelativePath="..\..\src\native\common\include\jp_platform_linux.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_platform_win32.h">
+				RelativePath="..\..\src\native\common\include\jp_platform_win32.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_primitivetypes.h">
+				RelativePath="..\..\src\native\common\include\jp_primitivetypes.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_proxy.h">
+				RelativePath="..\..\src\native\common\include\jp_proxy.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_reference.h">
+				RelativePath="..\..\src\native\common\include\jp_reference.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_referencequeue.h">
+				RelativePath="..\..\src\native\common\include\jp_referencequeue.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_type.h">
+				RelativePath="..\..\src\native\common\include\jp_type.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_typemanager.h">
+				RelativePath="..\..\src\native\common\include\jp_typemanager.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_typename.h">
+				RelativePath="..\..\src\native\common\include\jp_typename.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jp_utility.h">
+				RelativePath="..\..\src\native\common\include\jp_utility.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\src\native\common\include\jpype.h">
+				RelativePath="..\..\src\native\common\include\jpype.h"
+				>
 			</File>
 		</Filter>
 	</Files>

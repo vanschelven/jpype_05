@@ -108,7 +108,7 @@ JPTypeName JPTypeName::fromSimple(const char* name)
 		
 	// is it an array?
 	size_t arrayDimCount = 0;
-	if (simple[simple.length()-1] == ']')
+	if (simple.length() > 0 && simple[simple.length()-1] == ']')
 	{
 		size_t i = simple.length()-1;
 		while (simple[i] == ']' || simple[i] == '[')

@@ -26,17 +26,17 @@ public :
 	JPypeException(char* msn, const char* f, int l) 
 	{
 		file=f, line=l;
-		char msg[255]; 
-		sprintf(msg, "%s at %s:%d", msn, file, line);
-		this->msg = msg;
+		std::stringstream str;
+		str << msn << " at " << f << ":" << l;
+		this->msg = str.str();
 	}
 
 	JPypeException(string msn, const char* f, int l)
 	{
 		file=f, line=l;
-		char msg[255]; 
-		sprintf(msg, "%s at %s:%d", msn.c_str(), file, line);   
-		this->msg = msg;
+		std::stringstream str;
+		str << msn << " at " << f << ":" << l;
+		this->msg = str.str();
 	}
 
 	JPypeException(const JPypeException& ex) : file(ex.file), line(ex.line) { this->msg = ex.msg;}

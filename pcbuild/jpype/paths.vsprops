@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="paths"
+	>
+	<UserMacro
+		Name="java_home"
+		Value="c:\dev\tools\jdk6"
+		PerformEnvironmentSet="true"
+	/>
+	<UserMacro
+		Name="python_home"
+		Value="c:\dev\tools\python27"
+		PerformEnvironmentSet="true"
+	/>
+</VisualStudioPropertySheet>
