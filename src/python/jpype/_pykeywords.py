@@ -15,9 +15,12 @@
 #   
 #*****************************************************************************
 
-import sets
+try:
+    set
+except NameError:
+    from sets import Set as set
 
-KEYWORDS = sets.Set( (
+KEYWORDS = set( (
     "del", "for", "is", "raise",
     "assert", "elif", "from", "lambda", "return",   
     "break", "else", "global", "not", "try",

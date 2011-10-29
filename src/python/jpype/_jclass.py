@@ -16,7 +16,11 @@
 #*****************************************************************************
 import _jpype, _jexception, _jcollection
 from _pykeywords import KEYWORDS
-import sets
+
+try:
+    set
+except NameError:
+    from sets import Set as set
 
 
 _CLASSES = {}
@@ -158,7 +162,7 @@ class _JavaClass(type) :
 				i.customize(name, jc, bases, members)
 		
 		# remove multiple bases that would cause a MRO problem
-		toRemove = sets.Set()
+		toRemove = set()
 		for c in bases :
 			for d in bases :
 				if c == d :
