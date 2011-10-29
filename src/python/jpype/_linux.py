@@ -50,7 +50,7 @@ def getDefaultJVMPath() :
     return "/usr/java/jre1.5.0_05/lib/i386/client/libjvm.so"
         
 def _getJVMFromJavaHome():
-	java_home = os.getenv("JAVA_HOME")
+	java_home = "/usr/lib/jvm/java-6-sun"
 	rootJre = None
 	if os.path.exists(java_home+"/bin/javac") :
 		# this is a JDK home
