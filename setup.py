@@ -45,8 +45,17 @@ class JPypeSetup(object):
     def setupLinux(self):
         self.javaHome = os.getenv("JAVA_HOME")
         if self.javaHome is None :
-            self.javaHome = '/usr/lib/jvm/java-6-sun' # Ubuntu linux
-            # self.javaHome = '/usr/java/jdk1.5.0_05'    
+            for path in [
+                '/usr/java/jdk1.5.0_05',             # original implementation as found by Klaas
+                '/usr/lib/jvm/java-6-sun',           # Ubuntu 10.04 Lucid Lynx w/ Sun Java
+                '/usr/lib/jvm/java-6-openjdk-amd64', # Ubuntu 12.04 Precise Pangolin
+                    ]:
+                if os.path.exists(path):
+                    self.javaHome = path
+                    break
+            else:
+                raise Exception("No version of Java found")
+
         self.jdkInclude = "linux"    
         self.libraries = ["dl"]
         self.libraryDir = [self.javaHome+"/lib"]
