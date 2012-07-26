@@ -47,8 +47,27 @@ def getDefaultJVMPath() :
         # TODO
         pass
 
+    # failing that, let's have an impl. of "known" locations that actually works
+    jvm = _getJVMFromKnownLocations()
+    if jvm is not None :
+        return jvm
+
     return "/usr/java/jre1.5.0_05/lib/i386/client/libjvm.so"
         
+def _getJVMFromKnownLocations():
+    # the use of the original _KNOWN_LOCATIONS is unknown to me (KvS), so I'm duplicating my
+    # own version here
+    KNOWN_LOCATIONS = (
+        '/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/',
+    )
+
+    for known_location in KNOWN_LOCATIONS:
+        for i in JRE_ARCHS :
+            if os.path.exists(known_location+"/"+i) :
+                return known_location+"/"+i
+
+    return None
+
 def _getJVMFromJavaHome():
 	java_home = "/usr/lib/jvm/java-6-sun"
 	rootJre = None
