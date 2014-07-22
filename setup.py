@@ -35,7 +35,7 @@ class JPypeSetup(object):
         self.extra_compile_args = ['/EHsc']
     
     def setupMacOSX(self):
-        self.javaHome = '/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/JavaVM.framework/Versions/Current/'
+        self.javaHome = '/System/Library/Frameworks/JavaVM.framework/Versions/Current'
         self.javaMac = '/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK'
         self.jdkInclude = ""
         self.libraries = ["dl"]
